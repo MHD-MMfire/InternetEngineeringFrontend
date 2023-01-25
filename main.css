@@ -1,0 +1,79 @@
+:root {
+    --page-padding: 1%;
+    --section-margin: 2%;
+    --section-padding: 2%;
+    --column-margin: 4%;
+}
+
+/*selecting everything*/
+* {
+    /*borders and paddings are included in the width & height of the elements*/
+    box-sizing: border-box;
+    /*changing font family for the entire site (fallback font = sans-serif)*/
+    font-family: Arial, sans-serif;
+}
+
+/*selecting <body> tag*/
+body {
+    padding: 0;
+    margin: 0;
+    /*font size for texts*/
+    font-size: 1.3em;
+}
+
+.content-wrapper {
+    padding: var(--page-padding);
+}
+
+.section-row {
+    background-color: #1e8ffe;
+    margin-bottom: var(--section-margin);
+    padding: var(--section-padding);
+    /*clearfix floating columns - overflow solution is a trick*/
+    /*overflow: auto; */
+    float: left;
+    width: 100%;
+}
+
+.header {
+    /*!*---full centralized background---*!*/
+    /*!*relative image url*!*/
+    /*background-image: url("img/Background.jpg");*/
+    /*!*no repeating over x-axis or y-axis*!*/
+    /*background-repeat: no-repeat;*/
+    /*!*centralize background base position (on lower screens, the center of the background is always shown)*!*/
+    /*background-position: center;*/
+    /*!*background always stays fixed no matter what (e.g. in scrolling)*!*/
+    /*background-attachment: fixed;*/
+    /*!*scaling background to always cover the whole specified area (=the whole page)*!*/
+    /*background-size: cover;*/
+}
+
+section {
+}
+
+.footer {
+    margin-bottom: 0;
+}
+
+.col {
+    background-color: #8fec90;
+    float: left;
+    margin-right: var(--column-margin);
+}
+
+.last-col {
+    margin-right: 0;
+}
+
+.col-4 {
+    width: calc((100% - var(--column-margin) * 3) / 4);
+}
+
+.col-3 {
+    width: calc((100% - var(--column-margin) * 2) / 3);
+}
+
+.col-2 {
+    width: calc((100% - var(--column-margin)) / 2);
+}
