@@ -5,21 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--page tab title-->
-    <title>Internet Engineering</title>
+    <title>Internet Engineering Class Homework</title>
+    <!--favicon-->
+    <link rel="icon" type="image/png" href="img/favicon.png">
     <!--external css-->
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
 <div class="content-wrapper">
     <!--Header-->
-    <header class="section-row header">
-        <h1>
-            <span class="center">INTERNET</span>
-            <span class="center">ENGINEERING</span>
+    <header id="header" class="section-row header">
+        <h1 class="center">
+            INTERNET
+            <br>
+            ENGINEERING
         </h1>
-        <h2>
-            <span class="center">IS WHAT WE ARE GOING TO</span>
-            <span class="center">LEARN IN THIS COURSE</span>
+        <h2 class="center">
+            IS WHAT WE ARE GOING TO
+            <br>
+            LEARN IN THIS COURSE
         </h2>
         <div class="center header-link">
             <a href="#related_books" class="button-link">SEE THIS COURSE RELATED BOOKS</a>
@@ -27,17 +31,39 @@
     </header>
     <!--Lectures-->
     <section id="lectures" class="section-row">
-        <div class="col col-4">
-            column 1 out of 4
+        <div class="col col-4 card">
+            <div class="card-logo logo-http"></div>
+            <div class="card-title">HTTP</div>
+            <div class="card-text">
+                <p>The Hypertext Transfer Protocol is an application layer protocol.</p>
+                <p>Communication between client computers and web servers is done by sending HTTP Requests and receiving
+                    HTTP Responses.</p>
+            </div>
         </div>
-        <div class="col col-4">
-            column 2 out of 4
+        <div class="col col-4 card">
+            <div class="card-logo logo-html"></div>
+            <div class="card-title">HTML CSS</div>
+            <div class="card-text">
+                <p>HTML (HyperText Markup Language) is the standard markup language for Web pages. CSS is the language
+                    we use to style an HTML document. CSS describes how HTML elements should be displayed.</p>
+            </div>
         </div>
-        <div class="col col-4">
-            column 3 out of 4
+        <div class="col col-4 card">
+            <div class="card-logo logo-js"></div>
+            <div class="card-title">JAVASCRIPT</div>
+            <div class="card-text">
+                <p>JavaScript is the programming language of the Web. JavaScript often abbreviated to JS is a
+                    lightweight, interpreted, or just-in-time compiled programming language with first-class
+                    functions</p>
+            </div>
         </div>
-        <div class="col col-4 last-col">
-            column 4 out of 4
+        <div class="col col-4 last-col card">
+            <div class="card-logo logo-golang"></div>
+            <div class="card-title">GOLANG</div>
+            <div class="card-text">
+                <p>Go language is a programming language initially developed at Google. It is a statically-typed
+                    language having syntax similar to that of C. Go is used to create computer programs.</p>
+            </div>
         </div>
     </section>
     <!--Related Books-->
