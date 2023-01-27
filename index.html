@@ -92,7 +92,7 @@
                 <div class="flip-front">
                     <img src="img/Book1-2.png" alt="Javascript Book" class="book-image">
                     <div class="book-text">
-                        <h4 style="display: inline">JAVASCRIPT GUIDE</h4>
+                        <h4 class="book-title">JAVASCRIPT GUIDE</h4>
                         <br>
                         By David Flanagan
                         <hr>
@@ -103,9 +103,10 @@
                 </div>
                 <div class="flip-back">
                     <div class="price">Price: $31.49</div>
-                    <a href="https://www.amazon.com/gp/product/1491952024/" class="purchase">Purchase</a>
+                    <a class="a-btn" href="#popup1">BUY</a>
                 </div>
             </div>
+
         </div>
 
         <div class="col col-3 book">
@@ -113,7 +114,7 @@
                 <div class="flip-front">
                     <img src="img/Book2-2.jpg" alt="React Book" class="book-image">
                     <div class="book-text">
-                        <h4 style="display: inline">ROAD TO REACT</h4>
+                        <h4 class="book-title">ROAD TO REACT</h4>
                         <br>
                         By Robin Wieruch
                         <hr>
@@ -124,10 +125,10 @@
                 </div>
                 <div class="flip-back">
                     <div class="price">Price: $29.99</div>
-                    <a href="https://www.amazon.com/Road-learn-React-pragmatic-React-js/dp/172004399X/ref=d_pd_sbs_sccl_2_3/130-5751593-0029724?pd_rd_w=m9yJh&content-id=amzn1.sym.3676f086-9496-4fd7-8490-77cf7f43f846&pf_rd_p=3676f086-9496-4fd7-8490-77cf7f43f846&pf_rd_r=MN81G3T0MAX9FR9FAENV&pd_rd_wg=XsyuS&pd_rd_r=c3fff6b6-0e60-41bd-b038-2e16c81b5390&pd_rd_i=172004399X&psc=1"
-                       class="purchase">Purchase</a>
+                    <a class="a-btn" href="#popup2">BUY</a>
                 </div>
             </div>
+
         </div>
 
         <div class="col col-3 last-col book">
@@ -135,7 +136,7 @@
                 <div class="flip-front">
                     <img src="img/Book3-2.png" alt="Golang Book" class="book-image">
                     <div class="book-text">
-                        <h4 style="display: inline">INTRODUCING GO</h4>
+                        <h4 class="book-title">INTRODUCING GO</h4>
                         <br>
                         By Caleb Doxsey
                         <hr>
@@ -146,8 +147,7 @@
                 </div>
                 <div class="flip-back">
                     <div class="price">Price: 22,11 €</div>
-                    <a href="https://www.amazon.fr/dp/1491941952?psc=1&th=1&linkCode=gs2&tag=vhpoet0ca-21"
-                       class="purchase">Purchase</a>
+                    <a class="a-btn" href="#popup3">BUY</a>
                 </div>
             </div>
         </div>
@@ -182,6 +182,75 @@
             </div>
         </div>
     </footer>
+</div>
+
+<div id="popup1" class="popup">
+    <div class="modal">
+        <img src="img/Book1-1.jpg" alt="JavaScript The Definitive Guide" class="modal-image">
+        <div class="modal-content">
+            <h3 class="modal-title">START READING NOW</h3>
+            <h4 class="modal-subtitle">IMPORTANT - PLEASE READ THESE TERMS BEFORE BUYING THE BOOK</h4>
+            <div class="modal-text">JavaScript is the programming language of the web and is used by more
+                software developers today than any other programming language. For nearly 25 years this best
+                seller has been the go-to guide for JavaScript programmers. The seventh edition is fully
+                updated to cover the 2020 version of JavaScript, and new chapters cover classes, modules,
+                iterators, generators, Promises, async/await, and metaprogramming. You’ll find illuminating
+                and engaging example code throughout. This book is for programmers who want to learn
+                JavaScript and for web developers who want to take their understanding and mastery to the
+                next level. It begins by explaining the JavaScript language itself, in detail, from the
+                bottom up. It then builds on that foundation to cover the web platform and Node.js.
+            </div>
+            <a href="https://www.amazon.com/gp/product/1491952024/" class="buy-link">BUY NOW</a>
+        </div>
+        <a href="#related_books" class="modal-close">&times;</a>
+    </div>
+</div>
+
+<div id="popup2" class="popup">
+    <div class="modal">
+        <img src="img/Book2-1.jpg" alt="The Road to React" class="modal-image">
+        <div class="modal-content">
+            <h3 class="modal-title">START READING NOW</h3>
+            <h4 class="modal-subtitle">IMPORTANT - PLEASE READ THESE TERMS BEFORE BUYING THE BOOK</h4>
+            <div class="modal-text">The Road to React: Your journey to master React.js in JavaScript - is a
+                comprehensive and pragmatic yet concise React feat. Hooks book.
+                What you will learn:
+                In "The Road to React" you will learn about all the fundamentals of React.js with Hooks
+                while building a full-blown React application step by step. While you create the React
+                application, every chapter will introduce you to a new React key feature. However, there is
+                more than only the fundamentals: The book dives into related topics (e.g. React with
+                TypeScript, Testing, Performance Optimizations) and advanced feature implementations like
+                client- and server-side searching. At the end of the book, you will have a fully working
+                deployed React application.
+            </div>
+            <a href="https://www.amazon.com/Road-learn-React-pragmatic-React-js/dp/172004399X/ref=d_pd_sbs_sccl_2_3/130-5751593-0029724?pd_rd_w=m9yJh&content-id=amzn1.sym.3676f086-9496-4fd7-8490-77cf7f43f846&pf_rd_p=3676f086-9496-4fd7-8490-77cf7f43f846&pf_rd_r=MN81G3T0MAX9FR9FAENV&pd_rd_wg=XsyuS&pd_rd_r=c3fff6b6-0e60-41bd-b038-2e16c81b5390&pd_rd_i=172004399X&psc=1"
+               class="buy-link">BUY NOW</a>
+        </div>
+        <a href="#related_books" class="modal-close">&times;</a>
+    </div>
+</div>
+
+<div id="popup3" class="popup">
+    <div class="modal">
+        <img src="img/Book3-1.jpg" alt="Introducing Go" class="modal-image">
+        <div class="modal-content">
+            <h3 class="modal-title">START READING NOW</h3>
+            <h4 class="modal-subtitle">IMPORTANT - PLEASE READ THESE TERMS BEFORE BUYING THE BOOK</h4>
+            <div class="modal-text">Perfect for beginners familiar with programming basics, this hands-on
+                guide provides an easy introduction to Go, the general-purpose programming language from
+                Google. Author Caleb Doxsey covers the languages core features with step-by-step
+                instructions and exercises in each chapter to help you practice what you learn. Go is a
+                general-purpose programming language with a clean syntax and advanced features, including
+                concurrency. This book provides the one-on-one support you need to get started with the
+                language, with short, easily digestible chapters that build on one another. By the time you
+                finish this book, not only will you be able to write real Go programs, you'll be ready to
+                tackle advanced techniques.
+            </div>
+            <a href="https://www.amazon.fr/dp/1491941952?psc=1&th=1&linkCode=gs2&tag=vhpoet0ca-21"
+               class="buy-link">BUY NOW</a>
+        </div>
+        <a href="#related_books" class="modal-close">&times;</a>
+    </div>
 </div>
 </body>
 </html>

@@ -52,7 +52,7 @@ body {
     background-color: #001274;
 }
 
-.menu-label:hover>* {
+.menu-label:hover > * {
     background-color: white;
 }
 
@@ -67,15 +67,15 @@ body {
     transition: 0.3s;
 }
 
-.check:checked ~ label>.bar1 {
+.check:checked ~ label > .bar1 {
     transform: translate(0, 9px) rotate(-45deg);
 }
 
-.check:checked ~ label>.bar2 {
+.check:checked ~ label > .bar2 {
     opacity: 0;
 }
 
-.check:checked ~ label>.bar3 {
+.check:checked ~ label > .bar3 {
     transform: translate(0, -9px) rotate(45deg);
 }
 
@@ -99,7 +99,7 @@ ul {
     z-index: 1;
 }
 
-ul>li {
+ul > li {
     font-size: 2em;
     margin-bottom: 1.3em;
     text-decoration: none;
@@ -209,11 +209,11 @@ ul>li {
     }
 }
 
-header>h1, header>h2 {
+header > h1, header > h2 {
     animation: 1s ease-out 0s 1 slideInFromLeft;
 }
 
-header>h1 {
+header > h1 {
     font-size: 2em;
     font-weight: normal;
     letter-spacing: 0.7em;
@@ -221,7 +221,7 @@ header>h1 {
     margin-bottom: 0.5em;
 }
 
-header>h2 {
+header > h2 {
     font-size: 1em;
     font-weight: normal;
     letter-spacing: 0.5em;
@@ -298,7 +298,7 @@ header>h2 {
     color: #555555;
 }
 
-.card-text>p {
+.card-text > p {
     /*card paragraphs should stick together*/
     margin: 0
 }
@@ -326,16 +326,18 @@ header>h2 {
 .books-title {
     width: 100%;
     text-align: center;
+    font-size: 1.4em;
+    margin-bottom: 35px;
 }
 
-.books-title>h2 {
+.books-title > h2 {
     display: inline-block;
     user-select: none;
     color: #1e65fe;
     transition: color 0.1s ease-out;
 }
 
-.books-title>h2:hover {
+.books-title > h2:hover {
     color: #900090;
 }
 
@@ -348,9 +350,8 @@ header>h2 {
 .flip-book {
     border-radius: 6px;
     color: #333333;
-    transition: transform 0.6s;
+    transition: transform 0.4s ease-out;
     transform-style: preserve-3d;
-
     position: relative;
     width: 100%;
     height: 100%;
@@ -362,9 +363,6 @@ header>h2 {
 }
 
 .flip-front, .flip-back {
-    /*position: absolute;*/
-    width: 100%;
-    height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
@@ -374,9 +372,18 @@ header>h2 {
 }
 
 .flip-back {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
     /*flip-back is initially flipped*/
     transform: rotateY(180deg);
-    background-color: #777777;
+    background-color: #333333;
+    text-align: center;
+}
+
+.book-title {
+    display: inline
 }
 
 .book-text {
@@ -395,9 +402,119 @@ hr {
     user-select: none;
 }
 
-.book-text>h4 {
+.book-text > h4 {
     display: inline;
 }
+
+.price {
+    color: white;
+    font-size: 2.5em;
+    margin-top: 6em;
+    margin-bottom: 4em;
+}
+
+.a-btn {
+    text-decoration: none;
+    padding: 1.3em 2.5em;
+    background-color: #a3a3a3;
+    border-radius: 16px;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #2261ff;
+    transition: color 0.1s, background-color 0.1s;
+}
+
+.a-btn:hover {
+    color: #a3a3a3;
+    background-color: #2261ff;
+}
+
+/*POPUP -----------------------------------------*/
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(35, 35, 35, 0.8);
+}
+
+.modal {
+    display: block;
+    margin: 10% auto;
+    width: 75%;
+    height: 60%;
+    background-color: white;
+}
+
+.modal-image {
+    height: 100%;
+    float: left;
+    margin-right: 3%;
+    aspect-ratio: 0.75;
+}
+
+.modal-content {
+    padding-right: 1%;
+    padding-top: 1%;
+}
+
+.modal-title {
+    font-size: 2em;
+    background: linear-gradient(90deg, #3293ff, #001c69);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.modal-subtitle {
+    font-size: 0.9em;
+}
+
+.modal-text {
+    max-height: 8em;
+    overflow-y: hidden;
+    margin-bottom: 2em;
+}
+
+.buy-link {
+    text-decoration: none;
+    padding: 1em 2.5em;
+    background-color: #3f75ee;
+    border-radius: 32px;
+    font-size: 1em;
+    color: white;
+    transition: color 0.1s, background-color 0.1s;
+}
+
+.buy-link:hover {
+    color: #3f75ee;
+    background-color: #333333;
+}
+
+.modal-close {
+    position: absolute;
+    top: 20%;
+    right: 14%;
+    font-size: 3em;
+    color: black;
+    transition: color 0.1s;
+    text-decoration: none;
+    user-select: none;
+}
+
+.modal-close:hover {
+    color: red;
+}
+
+.popup:target {
+    display: block;
+}
+
+/*END POPUP -----------------------------------------*/
 
 .footer-col {
     padding-top: 3em;
