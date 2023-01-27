@@ -402,6 +402,14 @@ hr {
     user-select: none;
 }
 
+.book-image-1 {
+    clip-path: polygon(0 0, 0 100%, 100% 85%, 100% 0);
+}
+
+.book-image-2 {
+    clip-path: polygon(0 0, 0 100%, 100% 85%, 100% 0);
+}
+
 .book-text > h4 {
     display: inline;
 }
